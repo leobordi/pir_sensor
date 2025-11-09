@@ -34,7 +34,6 @@ int main()
         if (state == 1) {
             printf("Movement detected!\n");
             gpio_put(PIN_LED, 1);
-            sleep_ms(500);
         } else {
             printf("Waiting for movement ...\n");
             gpio_put(PIN_LED, 0);
